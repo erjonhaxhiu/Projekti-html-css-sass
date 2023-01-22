@@ -1,0 +1,765 @@
+$cpurple: rgb(105, 90, 166);
+$cwhite: white;
+$cgrey: rgb(62, 66, 70);
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Paaji+2:wght@800&family=Lobster&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url("/img/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            button {
+                background-color: $cpurple;
+                color: white;
+                padding: 13px 15px;
+                border: none;
+                font-weight: 900;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $cwhite ;
+                    border: 1px solid $cpurple;
+
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-weight: 500;
+                text-decoration: none;
+                font-weight: 900;
+
+                &:hover {
+                    font-size: calc(20px + 10 * ((100vw - 300px) / 1000));
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-weight: bolder;
+                }
+            }
+        }
+
+        .logo {
+            a {
+                font-size: calc(20px + 10 * ((100vw - 300px) / 1000));
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                cursor: pointer;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+.john-doe {
+    .top {
+        margin-top: -450px;
+        padding-bottom: 200px;
+    }
+
+    .container {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+
+        h4 {
+            font-size: 50px;
+            font-weight: bolder;
+            color: $cgrey;
+        }
+
+        h3 {
+            font-size: 80px;
+            color: $cgrey;
+        }
+
+        p {
+            padding-bottom: 30px;
+            font-size: 20px;
+            letter-spacing: 8px;
+        }
+
+        .v-m-w {
+            background-color: $cpurple;
+            color: white;
+            padding: 13px 15px;
+            border-radius: 20px;
+            border: none;
+            border: 1px solid $cpurple;
+
+            &:hover {
+                cursor: pointer;
+                color: $cpurple;
+                background-color: white;
+            }
+        }
+    }
+}
+
+.about-me {
+    .container {
+        height: 550px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .foto-me {
+            img {
+                width: 400px;
+            }
+        }
+
+        .who-am-i {
+            h5 {
+                font-size: 20px;
+                color: $cpurple;
+                padding-bottom: 10px;
+            }
+
+            h2 {
+                font-size: 40px;
+                color: $cpurple;
+                font-weight: 1000;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: 15px;
+                letter-spacing: 0.6px;
+                line-height: 30px;
+                padding-bottom: 40px;
+            }
+
+            .download-cv {
+                background-color: white;
+                color: $cpurple;
+                border-color: $cpurple;
+                padding: 9px 18px;
+                border-radius: 20px;
+                font-size: 15px;
+                transition: 0.3s;
+
+                &:hover {
+                    background: $cpurple;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.service {
+    .container {
+        height: 550px;
+
+        .what-i-do {
+            h5 {
+                text-align: center;
+                color: $cpurple;
+                font-size: 20px;
+            }
+
+            h2 {
+                text-align: center;
+                color: $cpurple;
+                font-size: 40px;
+                padding-bottom: 50px;
+            }
+        }
+
+        .grid-w-d {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            justify-items: center;
+            align-items: center;
+            justify-content: space-between;
+
+            .adipisicing {
+                border: 1px solid $cgrey;
+                padding: 70px 90px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 255px;
+
+                h4 {
+                    color: $cpurple;
+                    padding-top: 15px;
+                    font-size: 20px;
+                    font-weight: 900;
+                    text-align: centers;
+                }
+            }
+        }
+    }
+}
+
+.portfolio {
+    height: 600px;
+
+    .container {
+        .what-i-did {
+            h5 {
+                text-align: center;
+                color: $cpurple;
+                padding-bottom: 15px;
+            }
+
+            h2 {
+                text-align: center;
+                color: $cpurple;
+                padding-bottom: 60px;
+                font-size: 40px;
+            }
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+    }
+}
+
+.pricing {
+    .container {
+        height: 780px;
+
+        .pricing-charge {
+            h5 {
+                text-align: center;
+                color: $cpurple;
+                padding-bottom: 15px;
+            }
+
+            h2 {
+                text-align: center;
+                color: $cpurple;
+                padding-bottom: 60px;
+                font-size: 40px;
+            }
+        }
+
+        .grid-pricing {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            justify-items: stretch;
+            align-items: center;
+
+            .free {
+                border: 1px solid $cgrey;
+                padding: 30px;
+
+                h3 {
+                    padding: 20px 0px;
+                    color: $cpurple;
+                    font-size: 30px;
+                }
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .x-red {
+                    color: red;
+                }
+
+                h2 {
+                    color: $cgrey;
+                    font-size: 30px;
+                    padding-bottom: 20px;
+                }
+
+                .scrb {
+                    background-color: $cpurple;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    font-size: 15px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $cwhite;
+                        color: $cpurple;
+                        border: 1px solid $cpurple;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hire-me {
+    background-color: $cpurple;
+
+    .container {
+        height: 135px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .hire-me-text {
+            h4 {
+                color: white;
+                font-size: 20px;
+                padding-bottom: 15px;
+            }
+
+            p {
+                color: white;
+                letter-spacing: 2px;
+            }
+        }
+
+        .hire-me-button {
+            button {
+                background-color: white;
+                border: none;
+                padding: 15px 20px;
+                border-radius: 5px;
+                color: black;
+                font-size: 16px;
+                font-weight: 1000;
+
+                &:hover {
+                    background-color: $cpurple;
+                    color: white;
+                    border: 2px solid white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.contact-me {
+    text-align: center;
+    padding-top: 40px;
+
+    .con-me {
+        text-align: center;
+
+        h4 {
+            color: $cpurple;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        h2 {
+            color: $cpurple;
+            font-size: 25px;
+            font-weight: 900;
+            text-align: center;
+            padding-bottom: 40px;
+            font-family: "Baloo Paaji", cursive;
+        }
+    }
+
+    .form {
+        text-align: center;
+
+        input {
+            width: 290px;
+            height: 38px;
+            border: 1px solid $cpurple;
+        }
+
+        textarea {
+            width: 585px;
+            height: 158px;
+            border: 1 px solid $cpurple;
+
+            &::placeholder {
+                padding-top: 20px;
+            }
+        }
+
+        ::placeholder {
+            padding-left: 20px;
+        }
+    }
+
+    .con-btn {
+        color: $cpurple;
+        border-color: $cpurple;
+        padding: 10px 30px;
+        background-color: white;
+        font-size: 20px;
+        font-family: "Abril Fatface", cursive;
+        font-family: "Baloo Paaji 2", cursive;
+        font-family: "Lobster", cursive;
+
+        &:hover {
+            background-color: $cpurple;
+            color: white;
+            border-color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+footer {
+    padding: 30px 0 20px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $cpurple;
+        padding-top: 20px;
+        align-items: center;
+
+        .cont-left {
+            color: $cpurple;
+        }
+
+        .cont-right {
+            ul {
+                list-style-type: none;
+                display: flex;
+                gap: 20px;
+
+                li {
+                    button {
+                        padding: 10px;
+                        border-radius: 50%;
+                        border-color: rgb(214, 205, 205);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        width: 390px;
+    }
+
+    .container {
+        width: 390px;
+    }
+
+    header {
+        .container {
+            .logo {
+                padding-left: 20px;
+            }
+
+            ul {
+                display: none;
+            }
+        }
+    }
+
+    main {
+        .john-doe {
+            .container {
+                width: 390px;
+
+                .top {
+                    text-align: center;
+
+                    h4 {
+                        font-size: 25px;
+                    }
+
+                    h3 {
+                        font-size: 30px;
+                        padding-bottom: 10px;
+                    }
+
+                    p {
+                        letter-spacing: 0.5px;
+                        font-size: 12px;
+                    }
+
+                    .v-m-w {
+                        width: 120px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        .about-me {
+            padding-top: 100px;
+            height: 1000px;
+
+            .container {
+                width: 390px;
+
+                .foto-me {
+                    img {
+                        padding-left: 50px;
+                        width: 340px;
+                        height: 340px;
+                    }
+                }
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .who-am-i {
+                    text-align: center;
+
+                    p {
+                        text-align: center;
+                        width: 390px;
+                        font-size: 12px;
+                        padding: 0 25px 40px 25px;
+                    }
+                }
+
+                .download-cv {
+                    width: 200px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+
+        .service {
+            height: 850px;
+            padding-top: 30px;
+
+            .container {
+                width: 390px;
+
+                .grid-w-d {
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(4, 1fr);
+                    gap: 15px;
+
+                    img {
+                        width: 55px;
+                    }
+
+                    .adipisicing {
+                        padding: 20px 40px;
+                        width: 250px;
+
+                        h4 {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .portfolio {
+            height: 1300px;
+
+            .container {
+                width: 390px;
+
+                .portfolio-grid {
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    gap: 15px;
+                    justify-items: center;
+                    align-items: center;
+
+                    .portfolio-1 {
+                        text-align: center;
+
+                        img {
+                            width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pricing {
+            height: 1850px;
+
+            .container {
+                width: 390px;
+
+                .pricing-charge {
+                    h5 {
+                        text-align: center;
+                        padding-bottom: 12px;
+                    }
+
+                    h2 {
+                        text-align: center;
+                        padding-bottom: 60px;
+                        font-size: 30px;
+                    }
+                }
+
+                .grid-pricing {
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    align-items: center;
+                    justify-items: center;
+                    gap: 15px;
+
+                    .free {
+                        border: 1px solid $cgrey;
+                        padding: 30px;
+                        width: 300px;
+
+                        h3 {
+                            padding: 20px 0px;
+                            font-size: 25px;
+                            text-align: center;
+                        }
+
+                        h2 {
+                            text-align: center;
+                        }
+
+                        .scrb {
+                            width: 100px;
+                        }
+
+                        img {
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .hire-me {
+            height: 200px;
+
+            .container {
+                width: 390px;
+                height: 135px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                .hire-me-text {
+                    padding-top: 20px;
+
+                    h4 {
+                        padding-top: 30px;
+                        color: white;
+                        font-size: 15px;
+                        padding-bottom: 15px;
+                        text-align: center;
+                    }
+
+                    p {
+                        color: white;
+                        letter-spacing: 0.2px;
+                        text-align: center;
+                    }
+                }
+
+                .hire-me-button {
+                    text-align: center;
+                    padding-top: 25px;
+
+                    button {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+
+        .contact-me {
+            .con-me {
+                text-align: center;
+
+                h4 {
+                    color: $cpurple;
+                    font-size: 15px;
+                    text-align: center;
+                }
+
+                h2 {
+                    color: $cpurple;
+                    font-size: 25px;
+                    font-weight: 900;
+                    text-align: center;
+                    padding-bottom: 40px;
+                    font-family: "Baloo Paaji", cursive;
+                }
+            }
+
+            .form {
+                input:nth-child(2) {
+                    margin-top: 10px;
+                }
+
+                textarea {
+                    width: 290px;
+                    height: 120px;
+                    border: 1px solid $cpurple;
+                }
+            }
+
+            .con-btn {
+                width: 180px;
+            }
+        }
+    }
+
+    footer {
+        .container {
+            display: block;
+            text-align: center;
+
+            .cont-right {
+                .cont-left {
+                    padding-bottom: 30px;
+                }
+
+                ul {
+                    display: block;
+
+                    li {
+                        button {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
